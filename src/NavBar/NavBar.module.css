@@ -3,6 +3,14 @@
 }
 
 .options {
-text-align: right;
-display: block;
+    padding: 10px;
+}
+
+.optionsDiv {
+    display: flex;
+}   
+
+.logoSmall {
+    height: 100px;
+    border-radius: 50%;
 }
