@@ -1,0 +1,29 @@
+.divContact {
+    background-color: red;
+}
+
+.FrontPage {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    display: block;
+}
+
+.information {
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    }
+  
+.logoBig {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+    }
+
+.about {
+    background-color: blue;
+}

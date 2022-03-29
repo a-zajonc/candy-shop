@@ -1,22 +1,26 @@
-import styles from './App.module.css';
-import { NavigationBar } from './NavBar';
-import Logo from './logowhole.png'
+// import styles from './App.module.css';
+import { NavigationBar } from './Components/NavBar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Home } from './Pages/Home.js';
+import { Contact } from './Pages/Contact.js';
+import { Footer } from './Components/Footer';
+import { About } from './Pages/About.js';
+import { Shop } from './Pages/Shop.js';
 
 function App() {
   return (
-    <div>
-      <NavigationBar />
-      <div className={styles.FrontPage}>
-        <img className={styles.logoBig} src={Logo} alt="Duże logo sklepu ze słodyczami" />
-        <div className={styles.information}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar vitae eros id consectetur.
-          Curabitur cursus sed sem in porttitor. In arcu massa, fermentum a mauris eu, pulvinar faucibus nulla.
-          Donec nec massa eget elit efficitur auctor. Duis sed convallis magna. In vel mollis purus.
-          Suspendisse dapibus ullamcorper eros, sit amet facilisis justo lacinia eu. Cras sit amet ante ante.
-          Donec mollis tristique urna quis hendrerit. Ut et euismod est. Mauris venenatis risus non eros volutpat gravida.
-          Donec dui libero, cursus ac justo eu, suscipit fermentum orci. Nulla sed consequat eros.
-          Donec metus neque, pellentesque bibendum augue eget, efficitur laoreet turpis.</div>
+    <Router>
+      <div>
+        <NavigationBar />
+        <Routes>
+          <Route exact path="/" element={< Home />}></Route>
+          <Route exact path='/sklep' element={< Shop />}></Route>
+          <Route exact path='/onas' element={< About />}></Route>
+          <Route exact path='/kontakt' element={< Contact />}></Route>
+        </Routes>
       </div>
-    </div>
+      <Footer />
+    </Router>
   );
 }
 
