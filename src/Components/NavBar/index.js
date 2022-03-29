@@ -13,7 +13,7 @@ export function NavigationBar() {
         <ul className={styles.optionsUl}>
             <Link to="/sklep"><div className={styles.options}>Sklep</div></Link>
             <Link to="/onas"><div className={styles.options}>O nas</div></Link>
-            <div className={styles.options}><Link to="/kontakt">Kontakt</Link></div>
+            <Link to="/kontakt"><div className={styles.options}>Kontakt</div></Link>
         </ul>
     </div>
 }

@@ -1,10 +1,12 @@
 .navigation {
     background-color: beige;
+    margin-bottom: 10px
 }
 
 .options {
     padding: 10px;
     text-decoration: none;
+    color: black;
 }
 
 .optionsUl {
