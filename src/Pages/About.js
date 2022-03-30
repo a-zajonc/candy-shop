@@ -2,6 +2,10 @@ import styles from './pages.module.css';
 
 export function About() {
     return <div className={styles.about}>
+        <img className={styles.aboutPicture}
+            src="https://png.pngitem.com/pimgs/s/56-560573_working-woman-illustration-png-transparent-png.png"
+            alt="Obrazek pracowników" />
+        <br></br>
         <span>Jesteśmy firmą lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Vestibulum tortor justo, varius at pharetra et,
             sollicitudin at neque. Maecenas a lorem ipsum.

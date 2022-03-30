@@ -20,10 +20,10 @@ export function Shop() {
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReBZ2t6ct-s4hHIxlRmjowVRIMuQ2ga3_5o3-BOedfEW4Q7K_nvsGYNPBCOPQ-4pMHtj0&usqp=CAU"
                         alt="Przekąski słone" />
                 </Link>
+                {/* </div> */}
             </div>
-        </div>
 
-        <div className={styles.productsRow}>
+            {/* <div className={styles.productsRow}> */}
 
             <div className={styles.shopProductDiv}>
                 <Link to="/sklep/czekoladyibatoniki">
