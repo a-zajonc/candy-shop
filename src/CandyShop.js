@@ -1,4 +1,4 @@
-// import styles from './App.module.css';
+import styles from './App.module.css';
 import { NavigationBar } from './Components/NavBar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './Pages/Home.js';
@@ -14,7 +14,7 @@ import { Sodas } from './Pages/Shop/Sodas.js'
 function App() {
   return (
     <Router>
-      <div>
+      <div className={styles.contentWrap}>
         <NavigationBar />
         <Routes>
           <Route exact path="/" element={< Home />}></Route>

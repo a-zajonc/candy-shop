@@ -110,3 +110,11 @@
     -webkit-transition: visibility 0s, opacity 0.5s linear; 
     transition: visibility 0s, opacity 0.5s linear;
 }
+
+.headline {
+    font-size: 150%;
+    display: grid;
+    justify-items: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}

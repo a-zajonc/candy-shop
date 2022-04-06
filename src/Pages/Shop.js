@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export function Shop() {
     return <div className={styles.shop}>
-        <span>Wybierz kategorie:</span>
+        <span className={styles.headline}>Wybierz kategorie:</span>
 
         <div className={styles.productsRow}>
             <div className={styles.shopProductDiv}>
