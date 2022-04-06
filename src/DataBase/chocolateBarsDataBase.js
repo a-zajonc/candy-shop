@@ -1,4 +1,4 @@
-export const ChocolateBarsProducts = [{
+export const chocolateBarsProducts = [{
     name: "Lindt",
     id: "1",
     weight: "100 g",

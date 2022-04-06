@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './shop.module.css';
-import { CandyProducts } from '../../DataBase/candyDataBase';
+import { candyProducts } from '../../DataBase/candyDataBase';
 import { ProductsDisplay } from '../../Components/ProductsDisplay';
 
 export function Candy() {
@@ -13,6 +13,6 @@ export function Candy() {
             <option value="pricedown">Cena malejąco</option>
             <option value="alphabetically">Alfabetycznie</option>
         </select></div>
-        {ProductsDisplay(CandyProducts)}
+        {ProductsDisplay(candyProducts)}
     </div>
 }

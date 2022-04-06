@@ -1,5 +1,5 @@
 import styles from './shop.module.css';
-import { ChocolateBarsProducts } from '../../DataBase/chocolateBarsDataBase';
+import { chocolateBarsProducts } from '../../DataBase/chocolateBarsDataBase';
 import { ProductsDisplay } from '../../Components/ProductsDisplay';
 
 export function ChocolateBars() {
@@ -12,6 +12,6 @@ export function ChocolateBars() {
             <option value="pricedown">Cena malejąco</option>
             <option value="alphabetically">Alfabetycznie</option>
         </select></div>
-        {ProductsDisplay(ChocolateBarsProducts)}
+        {ProductsDisplay(chocolateBarsProducts)}
     </div>
 }
