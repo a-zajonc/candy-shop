@@ -7,10 +7,3 @@ font-size: 200%;
 text-align: center;
 font-weight: 500;
 }
-
-.sorting {
-    display: grid;
-    justify-content: end;
-    margin-right: 22%;
-    margin-bottom: 10px;
-}
