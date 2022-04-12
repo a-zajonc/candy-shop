@@ -118,3 +118,18 @@
     margin-bottom: 10px;
     font-weight: bold;
 }
+
+.headlineCategory {
+    font-size: 220%;
+    display: grid;
+    justify-items: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.buttonAndSelect {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin:10px
+}

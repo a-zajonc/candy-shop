@@ -22,11 +22,7 @@ export function Shop() {
                         alt="Przekąski słone" />
                     <div className={styles.text}>Przekąski słone</div>
                 </Link>
-                {/* </div> */}
             </div>
-
-            {/* <div className={styles.productsRow}> */}
-
             <div className={styles.shopProductDiv}>
                 <Link to="/sklep/czekoladyibatoniki">
                     <img className={styles.productImage}
