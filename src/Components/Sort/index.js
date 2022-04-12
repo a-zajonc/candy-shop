@@ -24,7 +24,7 @@ export function Sort(products) {
     }
 
     return <div>
-        <div className={styles.sorting}><select value={sortType} onChange={event => setSortType(event.target.value)}>
+        <div><select className={styles.sorting} value={sortType} onChange={event => setSortType(event.target.value)}>
             <option value="default">Domyślnie</option>
             <option value="priceup">Cena rosnąco</option>
             <option value="pricedown">Cena malejąco</option>
