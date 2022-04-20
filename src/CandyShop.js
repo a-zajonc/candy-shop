@@ -6,10 +6,6 @@ import { Contact } from './Pages/Contact.js';
 import { Footer } from './Components/Footer';
 import { About } from './Pages/About.js';
 import { Shop } from './Pages/Shop.js';
-// import { Candy } from './Pages/Shop/Candy.js'
-// import { SaltySnacks } from './Pages/Shop/SaltySnacks.js'
-// import { ChocolateBars } from './Pages/Shop/ChocolateBars.js'
-// import { Sodas } from './Pages/Shop/Sodas.js'
 import { ShopCategoryPage } from './Pages/ShopCategoryPage';
 
 function App() {

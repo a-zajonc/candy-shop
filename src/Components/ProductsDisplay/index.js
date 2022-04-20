@@ -1,9 +1,9 @@
 import styles from './ProductsDisplay.module.css';
 
-export function ProductsDisplay(dataBase) {
+export function ProductsDisplay({ products }) {
     return <div>
         <div>
-            {(dataBase).map(product =>
+            {(products).map(product =>
                 <div className={styles.productElement} key={product.id}>
                     <div>
                         <img className={styles.productImage} src={product.imgSrc} alt={product.alt} />
