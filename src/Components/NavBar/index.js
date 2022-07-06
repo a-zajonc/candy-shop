@@ -7,14 +7,14 @@ export function NavigationBar() {
             <img src={Logo} height="100px" alt="Logo" className="rounded-circle" />
         </a>
         <ul className="nav grid gap-3">
-            <li className="bg-light  rounded m-1">
-                <a className="nav-link text-muted" href="/sklep">Sklep</a>
+            <li className="nav-item">
+                <a className="nav-link text-white fs-2" href="/sklep">Sklep</a>
             </li>
-            <li className="nav-item bg-light text-decoration-none rounded m-1">
-                <a className="nav-link text-muted" href="/onas">O nas</a>
+            <li className="nav-item">
+                <a className="nav-link text-white fs-2" href="/onas">O nas</a>
             </li>
-            <li className="nav-item bg-light text-decoration-none rounded m-1">
-                <a className="nav-link text-muted" href="/kontakt">Kontakt</a>
+            <li className="nav-item">
+                <a className="nav-link text-white fs-2" href="/kontakt">Kontakt</a>
             </li>
         </ul>
     </nav>
