@@ -1,6 +1,4 @@
 import { useState } from "react";
-import styles from "./Sort.module.css";
-
 export function SortBy({ products }) {
 
     const [sortType, setSortType] = useState("default")
@@ -23,7 +21,7 @@ export function SortBy({ products }) {
             .sort((a, b) => a.id - b.id)
     }
 
-    return <select className={styles.sorting} value={sortType} onChange={event => setSortType(event.target.value)}>
+    return <select className="custom-select" value={sortType} onChange={event => setSortType(event.target.value)}>
         <option value="default">Domyślnie</option>
         <option value="priceup">Cena rosnąco</option>
         <option value="pricedown">Cena malejąco</option>

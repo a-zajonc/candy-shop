@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './pages.module.css';
 import { products } from '../DataBase';
 import { ProductsDisplay } from '../Components/ProductsDisplay';
 import { SortBy } from '../Components/SortBy';
@@ -12,7 +11,7 @@ const getProductsByCategory = (allProducts, category) => {
 
 const mapPathNameToProductCategoryName = (part) => {
     switch (part) {
-        case 'cukierki': return ['candy', 'Cukierasy'];
+        case 'cukierki': return ['candy', 'Cukierki'];
         case 'przekaskislone': return ['saltySnack', 'Słone Przekąski'];
         case 'czekoladyibatoniki': return ['chocolateBar', 'Czekolady i Batoniki']
         case 'napoje': return ['soda', "Napoje"]
@@ -36,10 +35,12 @@ export function ShopCategoryPage() {
 
 
     return <div>
-        <div className={styles.headlineCategory}>{categoryName}</div>
-        <div className={styles.buttonAndSelect}>
+        <div className="d-flex justify-content-start p-2">
             <BackButton />
+        </div>
+        <div className="fs-1 text-center">{categoryName}</div>
 
+        <div className="container text-end p-2">
             <SortBy products={matchedProducts} />
         </div>
         <ProductsDisplay products={matchedProducts} />

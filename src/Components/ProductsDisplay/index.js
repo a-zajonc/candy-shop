@@ -1,20 +1,18 @@
-import styles from './ProductsDisplay.module.css';
 
 export function ProductsDisplay({ products }) {
-    return <div>
-        <div>
-            {(products).map(product =>
-                <div className={styles.productElement} key={product.id}>
-                    <div>
-                        <img className={styles.productImage} src={product.imgSrc} alt={product.alt} />
-                    </div>
-                    <div className={styles.productInfo}>
-                        <div className={styles.productName}>{product.name}</div>
-                        <div className={styles.productWeight}>Waga: {product.weight}</div>
-                        <div className={styles.productPrice}>Cena za opakowanie: {product.price} zł</div>
-                    </div>
+    return <div className="container text-center">
+        {(products).map(product =>
+            <div className="p-2 d-flex justify-content-center border-top" key={product.id}>
+                <div>
+                    <img className="rounded border" style={{ height: "200px", width: "200px" }} src={product.imgSrc} alt={product.alt} />
                 </div>
-            )}
-        </div>
+                <div className="p-2">
+                    <div className="h2 text-wrap" style={{ width: "200px" }}>{product.name}</div>
+                    <div className="text-muted pb-2">Waga: {product.weight}</div>
+                    <div className="text-muted h6">Cena za opakowanie: {product.price} zł</div>
+                </div>
+            </div>
+        )
+        }
     </div>
 }
