@@ -1,22 +1,20 @@
-import styles from './pages.module.css'
 
 export function Contact() {
-    return <div className={styles.contactDiv}>
+    return <div className="d-flex flex-column p-2 align-items-center">
         <img
-            className={styles.shopPicture}
+            className=""
             src="https://media.istockphoto.com/photos/the-olde-time-candy-shop-picture-id1200207445?k=20&m=1200207445&s=612x612&w=0&h=7KFUyo2UY-CViQ7blBBK3COO7YzCL3etpUdHTARhuzU="
             alt="Zdjęcie sklepu stacjonarnego" />
         <br></br>
-        <span className={styles.contactText}>
-            <u>Nasz adres:</u>
-            <br></br>
-            Ulica Słodka 52
-            <br></br>
-            12-345 Cukierkowo
-            <br></br>
-            Nr tel: 663 773 883
-            <br></br>
-            email: candyshop@biuro.com
-        </span>
+        <div className="card align-items-center" >
+            <span className="card-body fs-5" >
+                <h5 className="card-title">Nasz adres</h5>
+                Candy Shop<br />
+                ul. Warszawska 1/2<br />
+                01-001 Warszawa<br />
+                Nr tel: 656 656 656<br />
+                email: candy@shop.pl
+            </span>
+        </div>
     </div>
 }
