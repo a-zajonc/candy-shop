@@ -2,7 +2,7 @@
 export function Contact() {
     return <div className="d-flex flex-column p-2 align-items-center">
         <img
-            className=""
+            className="rounded"
             src="https://media.istockphoto.com/photos/the-olde-time-candy-shop-picture-id1200207445?k=20&m=1200207445&s=612x612&w=0&h=7KFUyo2UY-CViQ7blBBK3COO7YzCL3etpUdHTARhuzU="
             alt="Zdjęcie sklepu stacjonarnego" />
         <br></br>

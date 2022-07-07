@@ -1,10 +1,10 @@
 
 export function About() {
     return <div className="d-flex flex-column p-2 align-items-center">
-        <img className="rounded"
+        <img className="rounded pb-2"
             src="https://png.pngitem.com/pimgs/s/56-560573_working-woman-illustration-png-transparent-png.png"
             alt="Obrazek pracownika" />
-        <div className="card m-2">
+        <div className="card w-75">
             <div className="card-body fs-5" >Jesteśmy firmą lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Vestibulum tortor justo, varius at pharetra et,
                 sollicitudin at neque. Maecenas a lorem ipsum.
@@ -16,5 +16,4 @@ export function About() {
                 Donec ut rhoncus sem</div>
         </div>
     </div>
-
 }

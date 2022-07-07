@@ -1,6 +1,6 @@
 import React from 'react';
 import { products } from '../DataBase';
-import { ProductsDisplay } from '../Components/ProductsDisplay';
+import { ProductList } from '../Components/ProductList';
 import { SortBy } from '../Components/SortBy';
 import { BackButton } from '../Components/BackButton';
 import { useLocation } from 'react-router-dom';
@@ -32,7 +32,7 @@ const getProductsDetails = (pathname, allProducts) => {
 export function ShopCategoryPage() {
     const { pathname } = useLocation()
     const [categoryName, matchedProducts] = getProductsDetails(pathname, products)
-
+    const [sortedProducts, setSortedProducts] = React.useState(() => matchedProducts)
 
     return <div>
         <div className="d-flex justify-content-start p-2">
@@ -41,8 +41,10 @@ export function ShopCategoryPage() {
         <div className="fs-1 text-center">{categoryName}</div>
 
         <div className="container text-end p-2">
-            <SortBy products={matchedProducts} />
+            <SortBy onSort={comparator => {
+                setSortedProducts([...sortedProducts].sort(comparator))
+            }} />
         </div>
-        <ProductsDisplay products={matchedProducts} />
+        <ProductList products={sortedProducts} />
     </div>
 }
