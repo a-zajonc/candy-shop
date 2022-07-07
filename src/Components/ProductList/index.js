@@ -1,5 +1,5 @@
 
-export function ProductsDisplay({ products }) {
+export function ProductList({ products }) {
     return <div className="container text-center">
         {(products).map(product =>
             <div className="p-2 d-flex justify-content-center border-top" key={product.id}>
