@@ -1,6 +1,6 @@
 # Candy Shop App
 
-Jest to prosta strona internetową hurtowni ze słodkościami, gdzie właściel prezentuje swoją ofertę.
+Jest to prosta strona internetowa hurtowni ze słodkościami, gdzie właściel prezentuje swoją ofertę.
 
 ## Użyte w nim zostało:
 
